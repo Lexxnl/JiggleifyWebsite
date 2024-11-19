@@ -4,6 +4,21 @@ h1 {
     font-family: sans-serif;
     font-weight: bolder;
 }
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in to the container or elements */
+.fade-in {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s ease-in forwards; /* 2s duration, ease-in timing, forward fill */
+}
 
 /* Larger screens */
 @media (min-width: 768px) {
@@ -30,6 +45,7 @@ body {
 .header{
     padding: 120px;
     text-align: center;
+    padding-top: 45px;
 }
 
 .input-wrapper {
@@ -43,6 +59,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     background-color: white;
+    height: 50px;
 }
 
 .email-input {
@@ -52,6 +69,7 @@ body {
     outline: none;
     font-size: 16px;
     border-radius: 0;
+    padding-left: 16px;
 }
 
 .sign-up-button {
@@ -60,12 +78,22 @@ body {
     border: none;
     padding: 10px 20px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 6px;
+    height: 46px;
+    margin-right: 2px;
 }
 
 .sign-up-button:hover {
     background-color: #1a7f37;
 }
 
+.logo{
+    margin-top: 20px;
+}
+
+.button-logo{
+    background-color: #ffffff00;
+    border: None;
+}
