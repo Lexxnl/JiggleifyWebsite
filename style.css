@@ -1,53 +1,35 @@
-h1 {
-    font-size: 44px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-    font-weight: bolder;
-}
-/* Keyframes for fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Apply fade-in to the container or elements */
-.fade-in {
-    opacity: 0; /* Start hidden */
-    animation: fadeIn 1.5s ease-in forwards; /* 2s duration, ease-in timing, forward fill */
-}
-
-/* Larger screens */
-@media (min-width: 768px) {
-    h1 {
-        font-size: 44px;
-    }
-}
-
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 64px;
-    }
-}
-
-body {
+/* Global styles */
+html, body {
+    height: 100%;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: linear-gradient(0.25turn, #030542, #3f339f);
+    background: linear-gradient(to bottom, #030542, #3f339f);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     overflow-x: hidden;
 }
 
-.header{
+/* Header styles */
+.header {
     padding: 120px;
     text-align: center;
     padding-top: 45px;
 }
 
+/* Heading styles */
+h1 {
+    margin: 0 auto; /* Center horizontally */
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center; /* Align text to the center */
+    margin-bottom: 20px;
+    font-size: clamp(32px, 5vw, 58px); /* Fluid font size */
+    max-width: clamp(300px, 50%, 800px); /* Fluid max-width */
+}
+
+/* Input section */
 .input-wrapper {
     display: flex;
     align-items: center;
@@ -72,6 +54,7 @@ body {
     padding-left: 16px;
 }
 
+/* Sign up button styles */
 .sign-up-button {
     background-color: green;
     color: white;
@@ -89,11 +72,28 @@ body {
     background-color: #1a7f37;
 }
 
-.logo{
+/* Logo styles */
+.logo {
     margin-top: 20px;
 }
 
-.button-logo{
-    background-color: #ffffff00;
-    border: None;
+.button-logo {
+    background-color: transparent;
+    border: none;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-in animation applied to elements */
+.fade-in {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s ease-in forwards; /* 1.5s duration, ease-in timing, forward fill */
 }
