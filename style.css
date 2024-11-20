@@ -20,7 +20,6 @@ header {
     padding: 120px 20px;
     text-align: center;
     z-index: 1;
-    margin-top: -100px;
 }
 
 .sign-up-form{
@@ -52,8 +51,7 @@ p{
 }
 
 .main-section {
-    
-    background: black;
+    background: #0d1117;
     text-align: center; 
     border: 1px solid #161826; 
     border-radius: 15px;
@@ -71,8 +69,6 @@ p{
     -webkit-background-clip: text; 
     color: transparent; 
     font-weight: 100;
-    
-    
 }
 
 .main-section h1 {
@@ -109,7 +105,7 @@ header {
     padding: 120px 20px;
     text-align: center;
     z-index: 1;
-    margin-top: -100px;  /* Move the header 100px up */
+    margin-top: -45px;  /* Move the header 100px up */
 }
 
 
@@ -126,12 +122,33 @@ header {
     margin-top: 2px;
 }
 
+.sticky-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+    z-index: 1000;
+    padding: 10px 0;
+}
+
 .button-logo {
     background-color: transparent;
     border: none;
-    position: relative;  /* Ensures the button can be moved */
-    top: 25px;  /* Move the button down 25px */
+    position: relative;
+    width: 42px;
+    top: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+    margin: 0 auto;
+    display: block;
 }
+
+.content {
+    height: 2000px; /* Ensure there's enough scrollable content */
+}
+
+
 
 a:link, a:visited {
     color: #76bcf9;
