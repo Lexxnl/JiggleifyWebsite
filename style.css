@@ -117,11 +117,13 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 150px;
+    
 }
 
 .footer {
     font-size: 12px;
     text-align: left;
+    margin-left: 0px;
 }
 
 .instagram {
