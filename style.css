@@ -20,6 +20,11 @@ html, body {
     z-index: -1; /* Keep video behind other elements */
 }
 
+#jiggleify-description{
+    text-align: center;
+    margin: 20px auto;
+}
+
 /* Header section */
 .header {
     padding: 120px 20px;
