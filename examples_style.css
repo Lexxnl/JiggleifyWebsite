@@ -158,3 +158,36 @@ h1 {
     height: 250px; /* Set uniform height */
     border: none; /* Remove border */
 }
+
+/* Unvisited and visited links (default style) */
+a:link, a:visited {
+    color: #76bcf9;
+    text-decoration: none;
+}
+
+/* Animated underline for specific links */
+.animated-link {
+    position: relative; /* Needed for the pseudo-element */
+}
+
+/* Add the animated underline */
+.animated-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #76bcf9; /* Same color as the link */
+    transition: width 0.3s ease-in-out; /* Smooth animation for width */
+}
+
+/* Hover effect for animated links */
+.animated-link:hover::after {
+    width: 100%; /* Expand underline to full width */
+}
+
+/* Hover effect to maintain color */
+.animated-link:hover, .animated-link:active {
+    color: #76bcf9;
+}

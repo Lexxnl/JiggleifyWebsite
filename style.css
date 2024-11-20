@@ -78,6 +78,34 @@ footer {
     top: 25px;  /* Move the button down 25px */
 }
 
+a:link, a:visited {
+    color: #76bcf9;
+    text-decoration: none;
+}
+
+.animated-link {
+    position: relative; 
+}
+
+.animated-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #76bcf9; 
+    transition: width 0.3s ease-in-out;
+}
+
+
+.animated-link:hover::after {
+    width: 100%;
+}
+
+.animated-link:hover, .animated-link:active {
+    color: #76bcf9;
+}
 
 
 /* ad.mp4 video background */
