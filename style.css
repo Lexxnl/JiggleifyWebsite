@@ -39,6 +39,7 @@ h1 {
     max-width: 800px;
     margin: 0 auto;
     font-weight: bolder;
+    letter-spacing: 0.1vw;
 }
 
 p{
@@ -121,7 +122,7 @@ h2 {
 .wave-text .letter {
     display: inline-block;
     animation: wave 1s ease-in-out infinite;
-    margin: -5px; /* Remove any margin */
+    letter-spacing: -0.5vw;
     padding: 0; /* Remove any padding */
 }
 
