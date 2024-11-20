@@ -29,6 +29,15 @@ h1 {
     max-width: clamp(300px, 50%, 800px); /* Fluid max-width */
 }
 
+p, h2 { 
+    text-align: center; /* Align text to the center */
+    margin-bottom: 20px;
+    font-size: clamp(16px, 3vw, 20px); /* Fluid font size */
+    max-width: clamp(300px, 50%, 800px); /* Fluid max-width */
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
 /* Input section */
 .input-wrapper {
     display: flex;
@@ -96,4 +105,32 @@ h1 {
 .fade-in {
     opacity: 0; /* Start hidden */
     animation: fadeIn 1.5s ease-in forwards; /* 1.5s duration, ease-in timing, forward fill */
+}
+
+
+footer{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #151b23;
+    color: white;
+    margin-top: 100px;
+}
+
+.footer{
+    padding: 30px;
+    margin-left: 0px;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+
+.instagram {
+    margin-left: auto;  /* Pushes the Instagram link to the right */
+    margin-right: 10px;
 }
