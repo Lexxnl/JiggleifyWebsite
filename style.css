@@ -2,12 +2,14 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Mona Sans', serif;
+    background-color: black;
     background: none;
-    color: black;
+    color: white;
     text-align: center;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    
 }
 
 #jiggleify-description{
