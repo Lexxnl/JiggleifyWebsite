@@ -41,6 +41,14 @@ p {
     margin-bottom: 20px;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .sign-up-button {
+        font-size: 14px; /* Decrease font size on small screens */
+        padding: 8px 16px; /* Adjust padding for small screens */
+    }
+}
+
 /* Form section */
 .input-wrapper {
     display: flex;
