@@ -4,6 +4,9 @@ This repository contains the website for **Jiggleify**, an intuitive tool that a
 
 Jiggleify offers an easy-to-use interface for controlling the behavior, appearance, and interactions of 2D shapes, enabling creators to generate unique animations quickly and efficiently. Whether you're a beginner or an experienced animator, Jiggleify makes creating satisfying, professional-looking videos simple.
 
+![Jiggleify Website](https://github.com/Lexxnl/JiggleifyWebsite/blob/main/full.png?raw=true)
+
+
 ## What You'll Find Here
 This repository contains the front-end code for the **Jiggleify website**. It includes the HTML and CSS to run the site, along with assets like images, icons, and fonts. This project is designed to showcase Jiggleify's functionality, attract potential users, and to showcase my website development capabilities.
 
