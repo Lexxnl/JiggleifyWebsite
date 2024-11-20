@@ -116,6 +116,14 @@ footer {
     margin-right: 10px;
 }
 
+.button-logo {
+    background-color: transparent;
+    border: none;
+    position: relative;  /* Ensures the button can be moved */
+    top: 25px;  /* Move the button down 25px */
+}
+
+
 /* Keyframes for fade-in animation */
 @keyframes fadeIn {
     from {
