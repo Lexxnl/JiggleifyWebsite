@@ -1,48 +1,49 @@
-/* Global styles */
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #030542, #3f339f);
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Mona Sans', serif;
+    background: none; /* Remove the gradient temporarily for testing */
     color: white;
     text-align: center;
     overflow-x: hidden;
+    display: block; /* Remove flexbox from the root */
 }
 
-/* Header styles */
+/* Ensuring the video stays behind content */
+.video-background {
+    position: fixed; /* Use fixed to keep video in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keep video behind other elements */
+}
+
+/* Header section */
 .header {
-    padding: 120px;
+    padding: 120px 20px; /* Add padding for spacing */
     text-align: center;
-    padding-top: 45px;
+    z-index: 1; /* Ensure header stays on top of video */
 }
 
-/* Heading styles */
 h1 {
-    margin: 0 auto; /* Center horizontally */
-    font-family: sans-serif;
-    font-weight: bolder;
-    text-align: center; /* Align text to the center */
-    margin-bottom: 20px;
-    font-size: clamp(32px, 5vw, 58px); /* Fluid font size */
-    max-width: clamp(300px, 50%, 800px); /* Fluid max-width */
-}
-
-p, h2 { 
-    text-align: center; /* Align text to the center */
-    margin-bottom: 20px;
-    font-size: clamp(16px, 3vw, 20px); /* Fluid font size */
-    max-width: clamp(300px, 50%, 800px); /* Fluid max-width */
-    padding-bottom: 20px;
+    font-size: clamp(32px, 5vw, 58px);
+    max-width: 800px;
     margin: 0 auto;
+    font-weight: bolder;
 }
 
-/* Input section */
+p {
+    font-size: clamp(16px, 3vw, 20px);
+    margin-bottom: 20px;
+}
+
+/* Form section */
 .input-wrapper {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -59,36 +60,60 @@ p, h2 {
     border: none;
     outline: none;
     font-size: 16px;
-    border-radius: 0;
-    padding-left: 16px;
 }
 
-/* Sign up button styles */
 .sign-up-button {
     background-color: green;
     color: white;
     border: none;
     padding: 10px 20px;
     font-weight: bold;
-    font-size: 16px;
     cursor: pointer;
     border-radius: 6px;
-    height: 46px;
-    margin-right: 2px;
 }
 
 .sign-up-button:hover {
     background-color: #1a7f37;
 }
 
-/* Logo styles */
-.logo {
-    margin-top: 20px;
+/* QnA section */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    margin-top: 50px;
 }
 
-.button-logo {
-    background-color: transparent;
-    border: none;
+h2 {
+    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: clamp(16px, 3vw, 20px);
+    margin-bottom: 20px;
+}
+
+/* Footer section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #151b23;
+    color: white;
+    padding: 20px;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: left;
+}
+
+.instagram {
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 /* Keyframes for fade-in animation */
@@ -99,38 +124,4 @@ p, h2 {
     to {
         opacity: 1;
     }
-}
-
-/* Fade-in animation applied to elements */
-.fade-in {
-    opacity: 0; /* Start hidden */
-    animation: fadeIn 1.5s ease-in forwards; /* 1.5s duration, ease-in timing, forward fill */
-}
-
-
-footer{
-    display: flex;
-    justify-items: space-between;
-    align-items: center;
-
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #151b23;
-    color: white;
-    margin-top: 100px;
-}
-
-.footer{
-    padding: 30px;
-    margin-left: 0px;
-    font-size: 12px;
-    text-align: left;
-}
-
-
-
-.instagram {
-    margin-left: auto;  /* Pushes the Instagram link to the right */
-    margin-right: 10px;
 }
