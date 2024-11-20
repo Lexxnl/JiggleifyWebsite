@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Mona+Sans&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jiggleify is a tool that helps you create TikTok videos effortlessly. Sign up to be the first to know when we launch.">
     <meta property="og:title" content="Jiggleify">
     <meta property="og:description" content="Create satisfying TikTok content easily with Jiggleify. Sign up for early access!">
     <meta property="og:image" content="logo.svg">
     <title>Jiggleify</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=1.0" /> <!-- Cache busting added -->
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self';"> <!-- X-Frame-Options replaced -->
 </head>
 <body>
     <video autoplay loop muted class="video-background">
         <source src="ad.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    
 
     <a class="button-logo" href="index.html"><img class="logo" height="42" src="logo.svg" alt="Jiggleify logo" /></a>
     
@@ -27,7 +28,7 @@
             
             <form action="https://formspree.io/f/mpwzlrow" method="POST">
                 <div class="input-wrapper">
-                    <input class="email-input" required type="email" name="email" placeholder="Enter your email">
+                    <input class="email-input" required type="email" name="email" placeholder="Enter your email" autocomplete="email"> <!-- Added autocomplete -->
                     <button class="sign-up-button" type="submit">Sign up for Jiggleify</button>
                 </div>
             </form>
@@ -52,7 +53,7 @@
 
         <form action="https://formspree.io/f/mpwzlrow" method="POST">
             <div class="input-wrapper">
-                <input class="email-input" required type="email" name="email" placeholder="Enter your email">
+                <input class="email-input" required type="email" name="email" placeholder="Enter your email" autocomplete="email"> <!-- Added autocomplete -->
                 <button class="sign-up-button" type="submit">Sign up for Jiggleify</button>
             </div>
         </form>
@@ -60,7 +61,8 @@
 
     <footer>
         <p class="footer">Copyright © 2024 Jiggleify</p>
-        <a class="instagram" href="https://www.instagram.com/jiggleify/" target="_blank"><img class="instagram" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjAwMDEgOC44NzU3OUMxMC4yNzk4IDguODc1NzkgOC44NzU5IDEwLjI3OTcgOC44NzU5IDEyQzguODc1OSAxMy43MjAzIDEwLjI3OTggMTUuMTI0MiAxMi4wMDAxIDE1LjEyNDJDMTMuNzIwNCAxNS4xMjQyIDE1LjEyNDMgMTMuNzIwMyAxNS4xMjQzIDEyQzE1LjEyNDMgMTAuMjc5NyAxMy43MjA0IDguODc1NzkgMTIuMDAwMSA4Ljg3NTc5Wk0yMS4zNzA0IDEyQzIxLjM3MDQgMTAuNzA2MyAyMS4zODIyIDkuNDI0MjMgMjEuMzA5NSA4LjEzMjgyQzIxLjIzNjggNi42MzI4MiAyMC44OTQ3IDUuMzAxNTcgMTkuNzk3OCA0LjIwNDdDMTguNjk4NiAzLjEwNTQ4IDE3LjM2OTcgMi43NjU2NCAxNS44Njk3IDIuNjkyOThDMTQuNTc1OSAyLjYyMDMzIDEzLjI5MzkgMi42MzIwNCAxMi4wMDI1IDIuNjMyMDRDMTAuNzA4NyAyLjYzMjA0IDkuNDI2NjggMi42MjAzMyA4LjEzNTI3IDIuNjkyOThDNi42MzUyNyAyLjc2NTY0IDUuMzA0MDIgMy4xMDc4MyA0LjIwNzE0IDQuMjA0N0MzLjEwNzkyIDUuMzAzOTIgMi43NjgwOCA2LjYzMjgyIDIuNjk1NDIgOC4xMzI4MkMyLjYyMjc3IDkuNDI2NTcgMi42MzQ0OSAxMC43MDg2IDIuNjM0NDkgMTJDMi42MzQ0OSAxMy4yOTE0IDIuNjIyNzcgMTQuNTc1OCAyLjY5NTQyIDE1Ljg2NzJDMi43NjgwOCAxNy4zNjcyIDMuMTEwMjcgMTguNjk4NCA0LjIwNzE0IDE5Ljc5NTNDNS4zMDYzNiAyMC44OTQ1IDYuNjM1MjcgMjEuMjM0NCA4LjEzNTI3IDIxLjMwN0M5LjQyOTAyIDIxLjM3OTcgMTAuNzExMSAyMS4zNjggMTIuMDAyNSAyMS4zNjhDMTMuMjk2MiAyMS4zNjggMTQuNTc4MiAyMS4zNzk3IDE1Ljg2OTcgMjEuMzA3QzE3LjM2OTcgMjEuMjM0NCAxOC43MDA5IDIwLjg5MjIgMTkuNzk3OCAxOS43OTUzQzIwLjg5NyAxOC42OTYxIDIxLjIzNjggMTcuMzY3MiAyMS4zMDk1IDE1Ljg2NzJDMjEuMzg0NSAxNC41NzU4IDIxLjM3MDQgMTMuMjkzOCAyMS4zNzA0IDEyWk0xMi4wMDAxIDE2LjgwN0M5LjMzOTk2IDE2LjgwNyA3LjE5MzA4IDE0LjY2MDIgNy4xOTMwOCAxMkM3LjE5MzA4IDkuMzM5ODUgOS4zMzk5NiA3LjE5Mjk4IDEyLjAwMDEgNy4xOTI5OEMxNC42NjAzIDcuMTkyOTggMTYuODA3MiA5LjMzOTg1IDE2LjgwNzIgMTJDMTYuODA3MiAxNC42NjAyIDE0LjY2MDMgMTYuODA3IDEyLjAwMDEgMTYuODA3Wk0xNy4wMDQgOC4xMTg3NkMxNi4zODI5IDguMTE4NzYgMTUuODgxNCA3LjYxNzIgMTUuODgxNCA2Ljk5NjExQzE1Ljg4MTQgNi4zNzUwMSAxNi4zODI5IDUuODczNDUgMTcuMDA0IDUuODczNDVDMTcuNjI1MSA1Ljg3MzQ1IDE4LjEyNjcgNi4zNzUwMSAxOC4xMjY3IDYuOTk2MTFDMTguMTI2OSA3LjE0MzU5IDE4LjA5OCA3LjI4OTY2IDE4LjA0MTYgNy40MjU5NUMxNy45ODUzIDcuNTYyMjQgMTcuOTAyNiA3LjY4NjA3IDE3Ljc5ODMgNy43OTAzNkMxNy42OTQgNy44OTQ2NCAxNy41NzAyIDcuOTc3MzMgMTcuNDMzOSA4LjAzMzY4QzE3LjI5NzYgOC4wOTAwMyAxNy4xNTE1IDguMTE4OTUgMTcuMDA0IDguMTE4NzZaIiBmaWxsPSIjQUFBQkM1Ii8+Cjwvc3ZnPgo=" alt="instagram" class="FooterLinks__SocialMediaIcon-sc-ih4onk-3 cHihqy"></a>
+        <a class="instagram" href="https://www.instagram.com/jiggleify/" target="_blank">
+            <img class="instagram" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjAwMDEgOC44NzU3OUMxMC4yNzk4IDguODc1NzkgOC44NzU5IDEwLjI3OTcgOC44NzU5IDEyQzguODc1OSAxMy43MjAzIDEwLjI3OTggMTUuMTI0MiAxMi4wMDAxIDE1LjEyNDJDMTMuNzIwNCAxNS4xMjQyIDE1LjEyNDMgMTMuNzIwMyAxNS4xMjQzIDEyQzE1LjEyNDMgMTAuMjc5NyAxMy43MjA0IDguODc1NzkgMTIuMDAwMSA4Ljg3NTc5Wk0yMS4zNzA0IDEyQzIxLjM3MDQgMTAuNzA2MyAyMS4zODIyIDkuNDI0MjMgMjEuMzA5NSA4LjEzMjgyQzIxLjIzNjggNi42MzI4MiAyMC44OTQ3IDUuMzAxNTcgMTkuNzk3OCA0LjIwNDdDMTguNjk4NiAzLjEwNTQ4IDE3LjM2OTcgMi43NjU2NCAxNS44Njk3IDIuNjkyOThDMTQuNTc1OSAyLjYyMDMzIDEzLjI5MzkgMi42MzIwNCAxMi4wMDI1IDIuNjMyMDRDMTAuNzA4NyAyLjYzMjA0IDkuNDI2NjggMi42MjAzMyA4LjEzNTI3IDIuNjkyOThDNi42MzUyNyAyLjc2NTY0IDUuMzA0MDIgMy4xMDc4MyA0LjIwNzE0IDQuMjA0N0MzLjEwNzkyIDUuMzAzOTIgMi43NjgwOCA2LjYzMjgyIDIuNjk1NDIgOC4xMzI4MkMyLjYyMjc3IDkuNDI2NTcgMi42MzQ0OSAxMC43MDg2IDIuNjM0NDkgMTJDMi42MzQ0OSAxMy4yOTE0IDIuNjIyNzcgMTQuNTc1OCAyLjY5NTQyIDE1Ljg2NzJDMi43NjgwOCAxNy4zNjcyIDMuMTEwMjcgMTguNjk4NCA0LjIwNzE0IDE5Ljc5NTNDNS4zMDYzNiAyMC44OTQ1IDYuNjM1MjcgMjEuMjM0NCA4LjEzNTI3IDIxLjMwN0M5LjQyOTAyIDIxLjM3OTcgMTAuNzExMSAyMS4zNjggMTIuMDAyNSAyMS4zNjhDMTMuMjk2MiAyMS4zNjggMTQuNTc4MiAyMS4zNzk3IDE1Ljg2OTcgMjEuMzA3QzE3LjM2OTcgMjEuMjM0NCAxOC43MDA5IDIwLjg5MjIgMTkuNzk3OCAxOS43OTUzQzIwLjg5NyAxOC42OTYxIDIxLjIzNjggMTcuMzY3MiAyMS4zMDk1IDE1Ljg2NzJDMjEuMzg0NSAxNC41NzU4IDIxLjM3MDQgMTMuMjkzOCAyMS4zNzA0IDEyWk0xMi4wMDAxIDE2LjgwN0M5LjMzOTk2IDE2LjgwNyA3LjE5MzA4IDE0LjY2MDIgNy4xOTMwOCAxMkM3LjE5MzA4IDkuMzM5ODUgOS4zMzk5NiA3LjE5Mjk4IDEyLjAwMDEgNy4xOTI5OEMxNC42NjAzIDcuMTkyOTggMTYuODA3MiA5LjMzOTg1IDE2LjgwNzIgMTJDMTYuODA3MiAxNC42NjAyIDE0LjY2MDMgMTYuODA3IDEyLjAwMDEgMTYuODA3Wk0xNy4wMDQgOC4xMTg3NkMxNi4zODI5IDguMTE4NzYgMTUuODgxNCA3LjYxNzIgMTUuODgxNCA2Ljk5NjExQzE1Ljg4MTQgNi4zNzUwMSAxNi4zODI5IDUuODczNDUgMTcuMDA0IDUuODczNDVDMTcuNjI1MSA1Ljg3MzQ1IDE4LjEyNjcgNi4zNzUwMSAxOC4xMjY3IDYuOTk2MTFDMTguMTI2OSA3LjE0MzU5IDE4LjA5OCA3LjI4OTY2IDE4LjA0MTYgNy40MjU5NUMxNy45ODUzIDcuNTYyMjQgMTcuOTAyNiA3LjY4NjA3IDE3Ljc5ODMgNy43OTAzNkMxNy42OTQgNy44OTQ2NCAxNy41NzAyIDcuOTc3MzMgMTcuNDMzOSA4LjAzMzY4QzE3LjI5NzYgOC4wOTAwMyAxNy4xNTE1IDguMTE4OTUgMTcuMDA0IDguMTE4NzZaIiBmaWxsPSIjQUFBQkM1Ii8+Cjwvc3ZnPgo=" alt="instagram" class="FooterLinks__SocialMediaIcon-sc-ih4onk-3 cHihqy"></a>
     </footer>
 </body>
 </html>

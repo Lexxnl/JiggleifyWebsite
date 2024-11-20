@@ -22,10 +22,12 @@ html, body {
 
 /* Header section */
 .header {
-    padding: 120px 20px; /* Add padding for spacing */
+    padding: 120px 20px;
     text-align: center;
-    z-index: 1; /* Ensure header stays on top of video */
+    z-index: 1;
+    margin-top: -100px;  /* Move the header 100px up */
 }
+
 
 h1 {
     font-size: clamp(32px, 5vw, 58px);
@@ -88,10 +90,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-p {
-    font-size: clamp(16px, 3vw, 20px);
-    margin-bottom: 20px;
-}
 
 /* Footer section */
 footer {
@@ -104,6 +102,7 @@ footer {
     background-color: #151b23;
     color: white;
     padding: 20px;
+    margin-top: 100px;
 }
 
 .footer {
