@@ -9,17 +9,6 @@ html, body {
     display: block; /* Remove flexbox from the root */
 }
 
-/* Ensuring the video stays behind content */
-.video-background {
-    position: fixed; /* Use fixed to keep video in place */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Keep video behind other elements */
-}
-
 #jiggleify-description{
     text-align: center;
     margin: 20px auto;
@@ -33,7 +22,6 @@ html, body {
     margin-top: -100px;  /* Move the header 100px up */
 }
 
-
 h1 {
     font-size: clamp(32px, 5vw, 58px);
     max-width: 800px;
@@ -42,11 +30,65 @@ h1 {
     letter-spacing: 0.1vw;
 }
 
+h2 {
+    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: 15px;
+}
+
+
 p{
     font-size: clamp(16px, 3vw, 20px);
     margin-bottom: 20px;
     max-width: 50vw;
     margin: 0 auto;
+}
+
+/* Footer section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #151b23;
+    color: white;
+    padding: 20px;
+    margin-top: 150px;
+    
+}
+
+.left-footer {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.instagram {
+    margin-left: auto;
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-top: 2px;
+}
+
+.button-logo {
+    background-color: transparent;
+    border: none;
+    position: relative;  /* Ensures the button can be moved */
+    top: 25px;  /* Move the button down 25px */
+}
+
+
+
+/* ad.mp4 video background */
+.video-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 
@@ -93,17 +135,12 @@ p{
     background-color: #1a7f37;
 }
 
-/* QnA section */
 .fade-in {
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
     margin-top: 50px;
 }
 
-h2 {
-    font-size: clamp(24px, 4vw, 32px);
-    margin-bottom: 15px;
-}
 
 /* Define the wave animation */
 @keyframes wave {
@@ -166,43 +203,6 @@ h2 {
 
 .wave-text .letter:nth-child(10) {
     animation-delay: 0.9s;
-}
-
-
-
-/* Footer section */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #151b23;
-    color: white;
-    padding: 20px;
-    margin-top: 150px;
-    
-}
-
-.left-footer {
-    font-size: 12px;
-    text-align: left;
-    margin-left: 0px;
-}
-
-
-.instagram {
-    margin-left: auto;
-    margin-right: 10px;
-    padding-right: 10px;
-}
-
-.button-logo {
-    background-color: transparent;
-    border: none;
-    position: relative;  /* Ensures the button can be moved */
-    top: 25px;  /* Move the button down 25px */
 }
 
 

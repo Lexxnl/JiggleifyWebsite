@@ -9,6 +9,72 @@ html, body {
     display: block; 
 }
 
+/* Body background styling */
+body {
+    background: linear-gradient(180deg, #508fbc, #1d78b3);
+    color: white;
+}
+
+
+/* Footer section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #151b23;
+    color: white;
+    padding: 20px;
+    margin-top: 150px;
+    
+}
+
+.left-footer {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.instagram {
+    margin-left: auto;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+/* Header section */
+header {
+    display: flex;
+    text-align: center;
+    z-index: 1;
+    
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    width: 80%;
+    max-width: 900px;
+    min-width: 150px;
+    margin-bottom: -10px;
+}
+
+#top-paragraph{
+    width: 80%;
+    max-width: 900px;
+    min-width: 150px;
+    margin-bottom: 100px;
+}
+
+.button-logo {
+    background-color: transparent;
+    border: none;
+    position: relative;  /* Ensures the button can be moved */
+    top: 25px;  /* Move the button down 25px */
+    z-index: 10000000;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -23,10 +89,6 @@ html, body {
     animation: fadeIn 1.5s ease-in forwards; 
 }
 
-#top-par{
-    margin-top: 30px;
-    font-size: 20px;
-}
 /* Larger screens */
 @media (min-width: 768px) {
     h1 {
@@ -95,53 +157,4 @@ html, body {
     width: 100%; /* Fill container width */
     height: 250px; /* Set uniform height */
     border: none; /* Remove border */
-}
-
-
-header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-#title {
-    width: 80%; /* Set width relative to the screen */
-    max-width: 900px; /* Prevent it from becoming too large */
-    min-width: 150px; /* Ensure a minimum size */
-    margin-bottom: -10px;
-}
-
-#top-paragraph{
-    width: 80%; /* Set width relative to the screen */
-    max-width: 900px; /* Prevent it from becoming too large */
-    min-width: 150px; /* Ensure a minimum size */
-    margin-bottom: 100px;
-}
-
-
-
-
-
-
-/* Body background styling */
-body {
-    font-family: 'Mona Sans', sans-serif;
-    margin: 0;
-    background: linear-gradient(180deg, #508fbc, #1d78b3);
-    color: white;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    color: #ccc;
-    margin-top: 20px;
-}
-
-.button-logo {
-    background-color: transparent;
-    border: none;
-    position: relative;  /* Ensures the button can be moved */
-    top: 25px;  /* Move the button down 25px */
 }
