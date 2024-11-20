@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Mona Sans', serif;
+    background: none; /* Remove the gradient temporarily for testing */
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    display: block; /* Remove flexbox from the root */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in to the container or elements */
+.fade-in {
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 1.5s ease-in forwards; /* 2s duration, ease-in timing, forward fill */
+}
+
+#top-par{
+    margin-top: -30px;
+    font-size: 20px;
+}
+/* Larger screens */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-gallery {
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+    }
+    .video-example {
+        max-width: 100%; /* Videos take full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+
+.example-iframe{
+    min-height: 750px;
+}
+/* Parent container for videos */
+.video-gallery {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Add spacing between videos */
+    gap: 20px; /* Uniform gap between items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 0 auto; /* Center container */
+    max-width: 1200px; /* Restrict maximum container width */
+    padding: 0px;
+}
+
+/* Style for each video section */
+.video-example {
+    flex: 1 1 30%; /* Each video takes ~30% of the row */
+    max-width: 30%; /* Prevents exceeding allocated width */
+    background-color: #fff; /* Improve contrast */
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-height: 600px;
+}
+
+/* Heading and paragraph styling */
+.video-example h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.video-example p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Video container styling */
+.video-container iframe {
+    width: 100%; /* Fill container width */
+    height: 250px; /* Set uniform height */
+    border: none; /* Remove border */
+}
+
+/* Body background styling */
+body {
+    font-family: 'Mona Sans', sans-serif;
+    margin: 0;
+    background: linear-gradient(180deg, #508fbc, #1d78b3);
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+
+.header{
+    padding: 120px;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.button-logo {
+    background-color: transparent;
+    border: none;
+    position: relative;  /* Ensures the button can be moved */
+    top: 25px;  /* Move the button down 25px */
+}

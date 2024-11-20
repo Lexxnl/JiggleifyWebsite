@@ -185,11 +185,12 @@ footer {
     
 }
 
-.footer {
+.left-footer {
     font-size: 12px;
     text-align: left;
     margin-left: 0px;
 }
+
 
 .instagram {
     margin-left: auto;
