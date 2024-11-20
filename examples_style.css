@@ -74,6 +74,7 @@ html, body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
     min-height: 600px;
+    min-width: 325px;
 }
 
 /* Heading and paragraph styling */
