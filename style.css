@@ -44,7 +44,7 @@ p {
 /* Media query for smaller screens */
 @media (max-width: 600px) {
     .sign-up-button {
-        font-size: 14px; /* Decrease font size on small screens */
+        font-size: 8px; /* Decrease font size on small screens */
         padding: 8px 16px; /* Adjust padding for small screens */
     }
 }
