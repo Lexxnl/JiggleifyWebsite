@@ -104,6 +104,70 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* Define the wave animation */
+@keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to the original position */
+    }
+  }
+  
+/* Style for each letter */
+.wave-text .letter {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    margin: -5px; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+
+/* Offset the timing for each letter to create a wave effect */
+.wave-text .letter:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.wave-text .letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave-text .letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave-text .letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave-text .letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave-text .letter:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave-text .letter:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave-text .letter:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave-text .letter:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.wave-text .letter:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+
 
 /* Footer section */
 footer {
